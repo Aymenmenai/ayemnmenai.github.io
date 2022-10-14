@@ -1,0 +1,176 @@
+.section {
+    padding: 4rem 4rem;
+    text-align: center;
+    @include flexrow();
+    flex-direction: column;
+    gap: 3rem;
+
+    div {
+        color: $c2;
+
+        h2 {
+            font-weight: 800;
+            color: $text;
+            // color: rgb(67, 35, 161)
+        }
+
+        p {
+            padding-top: 0.5rem;
+            font-size: 18px;
+            width: 90vw;
+            margin: auto;
+        }
+    }
+}
+
+.tech {
+    .collection {
+        @include flexrow();
+        flex-wrap: wrap;
+
+        i {
+            font-size: 3rem;
+        }
+
+        img {
+            width: 3rem;
+        }
+
+    }
+}
+
+.project {
+    @include flexrow();
+    flex-wrap: wrap;
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.3);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .display {
+        display: none;
+    }
+
+    .application {
+        background-color: rgba(128, 128, 128, 0.13);
+        padding: 2rem;
+        width: 400px;
+        height: 230px;
+        border-radius: 1.6rem;
+        @include hover();
+
+        &:hover {
+            transform: scale(102%);
+        }
+    }
+    
+    .card {
+        background-color: white;
+        border: solid 0.3rem $lit;
+        
+        &:hover {
+            background-color: white;
+        }
+        
+        .title {
+            font-size: 21px;
+        }
+        
+        p {
+            width: 100%;
+        }
+        .btns {
+            display: flex;
+            // position: absolute;
+            bottom: 1rem;
+            gap: 1rem;
+            width: 100%;
+        
+            .btn {
+                font-size: large;
+                padding: 1rem;
+                border-radius: 1.2rem;
+                text-decoration: none;
+                border: 3px solid $c2;
+            }
+            
+            .main-btn {
+                color: white;
+                background-color: $c2;
+                flex: 2;
+            }
+        
+        
+        }
+    }
+
+    .active {
+        position: fixed;
+        top: 8.75vh;
+        z-index: 30;
+        width: 70vw;
+        height: 70vh;
+
+        &:hover {
+            transform: scale(100%)
+        }
+    }
+}
+
+// DARK MODE
+.dark {
+    background-color: $dbg;
+
+    .section {
+        div {
+            color: $dark;
+
+            h2 {
+                color: $bg
+            }
+        }
+    }
+
+    .project {
+
+
+        .application {
+            background-color: rgba(128, 128, 128, 0.13);
+
+
+
+        }
+
+        .card {
+            background-color: $dbgl;
+            border: none;
+            position: relative;
+
+            &:hover {
+                background-color: $dbgl;
+            }
+
+        }
+
+
+    }
+}
+
+
+// RESPONSIVE
+@media only screen and (min-width:900px) {
+    .section {
+        div {
+            p {
+                width: 67vw;
+            }
+
+        }
+    }
+
+}

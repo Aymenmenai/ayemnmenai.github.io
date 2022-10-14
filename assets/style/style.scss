@@ -1,0 +1,33 @@
+@import 'variable';
+@import 'mixin';
+@import 'root/header';
+@import 'root/main';
+@import 'root/section';
+@import 'root/footer';
+@import 'root/animation';
+// MIXIN
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+    body {
+        margin: 0;
+        padding: 0;
+       overflow: auto;
+       &::-webkit-scrollbar{
+        display: none;
+       }
+    }
+    
+}
+
+
+hr {
+    width: 60%;
+    margin: auto;
+    opacity: 0.2;
+}

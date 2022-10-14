@@ -1,0 +1,26 @@
+{
+    "main": {
+        "title": "I'm an artist and a develper!!!!",
+        "description": "My name is Aymen Menai , 23 years old, algerian , and I am Full stack developer and a graphic designer"
+    },
+    "tech": {
+        "title": "Technologies I use",
+        "description": "Those are technologies that I can work with in projects and even large project, so if you have a team using those techs it will be easier to have quick start on the flow"
+    },
+    "learn": {
+        "title": "Technologies I learn",
+        "description": "As any programmer I learn new technologies to take my work to the next level those are several of what I want to learn and improve in, (Currently I don't have MacOs so I can't really learn IOS developement but it is one of my future goal,Also one of my interests is to learn svg animation)"
+    },
+    "project": {
+        "title": "My own projects",
+        "description": "Those are webiste that you cant check, and try (the webside and the complete UI is built by me, notice also that some api used are from third party), Be aware! Those webiste are not for commercial uses, if you notice any ads or such a paying sections those are trying to spam you"
+    },
+    "client": {
+        "title": "Client projects",
+        "description": "Those are some clients that I've the honor to work with, some of those website can be still under developing yet"
+    },
+    "contact": {
+        "title": "Looking for your contact",
+        "description": "If you have any interests about what I build, feed back, want to make your dream project real or even, or even you want to hire me , feel free to contact me on facebook, linkedIn or by Email. we are set a videocall and discuss about your ideas,"
+    }
+}

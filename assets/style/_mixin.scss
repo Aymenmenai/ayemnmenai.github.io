@@ -1,0 +1,29 @@
+@mixin transition {
+    transition: 200ms all ease-in-out ;
+}
+@mixin hover {
+    cursor: pointer;
+    @include transition();
+    &:hover{
+        background-color: $hov;
+        transform: scale(130%);
+    }
+}
+// FLEX
+@mixin flexrow {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 1rem;
+}
+// BOX
+@mixin box1 {
+    border-radius: 2rem;
+    top: 2.4rem;
+    position: absolute;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #fff;
+    overflow: hidden;
+}

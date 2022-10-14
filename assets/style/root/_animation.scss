@@ -1,0 +1,46 @@
+.star{
+    width: 3px;
+    height: 3px;
+    // filter: blur(1px);
+    transform: rotate(45deg);
+ 
+    background-color: $c2;
+    animation: star 2s linear infinite   ;
+}
+
+@keyframes star {
+    0%,100%{
+      opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+
+@keyframes popup {
+    0%{
+
+        transform: translateY(-10px);
+      opacity: 0;
+    }
+    50%{
+        transform: translateY(10px);
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popback {
+    100%{
+
+        transform: translateY(-10px);
+      opacity: 0;
+    }
+    0%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,106 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4rem;
+    width: 100%;
+    z-index: 20;
+
+    .navbar {
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        @include flexrow();
+        justify-content: space-between;
+
+        .logo {
+            @include flexrow();
+            color: $c2;
+
+            // font-size: 32px;
+            svg {
+                fill: $c2;
+            }
+        }
+
+        ul {
+            color: $c2;
+            list-style: none;
+            @include flexrow();
+
+            .language {
+                @include flexrow();
+                flex-direction: column;
+                gap: 4;
+                justify-content: end;
+                align-items: end;
+                position: relative;
+
+                i {
+                    font-size: 1.5rem;
+                    @include hover();
+                }
+
+                .pop-up {
+                    @include box1();
+                    display: none;
+                    animation: popup 200ms linear forwards;
+
+                    li {
+                        text-align: center;
+                        padding: 0.75rem 3rem;
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: $hov;
+                        }
+                    }
+                }
+            }
+
+            li {
+                i {
+
+                    display: none;
+                    font-size: 1.5rem;
+                }
+
+                .active {
+                    @include hover();
+                    display: flex;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+.dark {
+    header {
+        .navbar {
+            .logo {
+                svg {
+                    fill: $c1;
+                }
+            }
+
+            ul {
+                color: $c1;
+
+                .language {
+                    .pop-up {
+                        @include box1();
+                        background-color: $dbgl;
+
+                    }
+                }
+
+
+            }
+
+        }
+
+    }
+}
