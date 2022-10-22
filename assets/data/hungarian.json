@@ -1,0 +1,18 @@
+{
+    "main": {
+        "title": "Művész és fejlesztő vagyok",
+        "description": "Aymen Menai vagyok, 23 éves, algériai, full stack fejlesztő és grafikus vagyok"
+    },
+    "tech": {
+        "title": "Az általam használt technológiák",
+        "description": "Ezek olyan technológiák, amelyekkel dolgozhatok projektekben és akár nagy projektekben is, így ha van egy csapata, aki használja ezeket a technikákat, akkor könnyebb lesz gyorsan elkezdeni a folyamatot."
+    },
+    "project": {
+        "title": "Saját projektek",
+        "description": "Ezek olyan webhelyek, amelyeket nem tud ellenőrizni és kipróbálni (a weboldalt és a teljes felhasználói felületet én készítettem, vegye figyelembe, hogy néhány használt API harmadik féltől származik), Figyelem! Ezek a webhelyek nem kereskedelmi célokra szolgálnak , ha bármilyen hirdetést vagy ilyen fizető rovatot észlel, amelyek spamet akarnak küldeni Önnek"
+    },
+    "contact": {
+        "title": "Kapcsolattartót keresem",
+        "description": "Ha felkeltettem érdeklődését, amit építek, visszajelzést küldök, szeretné megvalósítani álmai projektjét vagy akár valóra váltani, vagy akár fel is szeretne venni, keressen bizalommal facebookon, linkedIn-en vagy e-mailben. videohívást kezdeményezünk, és megbeszéljük az Ön elképzeléseit"
+    }
+}

@@ -1,8 +1,28 @@
 import english from '../data/english.json' assert { type: "json" };
+import french from '../data/french.json' assert { type: "json" };
+import arabic from '../data/arabic.json' assert { type: "json" };
+import hungarian from '../data/hungarian.json' assert { type: "json" };
+import chinese from '../data/chinese.json' assert { type: "json" };
+import italian from '../data/italian.json' assert { type: "json" };
+import german from '../data/german.json' assert { type: "json" };
+
 const setlanguage = (lang) => {
+    console.log(lang)
     switch (lang) {
         case 'English':
             return english
+        case 'Français':
+            return french
+        case 'العربية':
+            return arabic
+        case 'Magyar':
+            return hungarian
+        case '中文':
+            return chinese
+        case 'italiano':
+            return italian
+        case 'Deutsch':
+            return german
         default:
             return english
     }
@@ -43,16 +63,12 @@ const newlangData = (data) => {
     document.querySelector('main h1').textContent = data.main.title
     document.querySelector('main p').textContent = data.main.description
 
-    document.querySelector('.using h2').textContent = data.tech.title
-    document.querySelector('.using p').textContent = data.tech.description
+    document.querySelector('.tech h2').textContent = data.tech.title
+    document.querySelector('.tech p').textContent = data.tech.description
 
-    document.querySelector('.learning h2').textContent = data.learn.title
-    document.querySelector('.learning p').textContent = data.learn.description
 
-    document.querySelector('.own h2').textContent = data.project.title
-    document.querySelector('.own p').textContent = data.project.description
-    document.querySelector('.client h2').textContent = data.client.title
-    document.querySelector('.client p').textContent = data.client.description
+    document.querySelector('.project h2').textContent = data.project.title
+    document.querySelector('.project p').textContent = data.project.description
     document.querySelector('.contact-me h2').textContent = data.contact.title
     document.querySelector('.contact-me p').textContent = data.contact.description
 }
@@ -79,12 +95,12 @@ document.querySelector('.dark-btn').addEventListener('click', () => {
     if (!dark) {
         document.body.classList.add('dark')
         // console.log(img)
-        document.querySelector('main img').src ='./assets/image/dark.svg'
+        // document.querySelector('main img').src ='./assets/image/d.svg'
         dark = !dark
     } else {
         document.body.classList.remove('dark')
         
-        document.querySelector('main img').src ='./assets/image/light.svg'
+        // document.querySelector('main img').src ='./assets/image/l.svg'
 
         dark = !dark
     }

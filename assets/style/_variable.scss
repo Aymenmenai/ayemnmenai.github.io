@@ -1,12 +1,39 @@
 // COLORS
+    // GENERAL TEAM COLOR
+    $theme:#a5e1fb;
+    $themedeep:rgb(252, 252, 252);
+    $dark:rgb(160, 160, 160);
+    $white:#fff;
+    $grey:rgb(37, 39, 44);
+    $lightgray:rgb(227, 227, 227);
+    $soft:rgb(62, 104, 254);
+    // NORMAL
+    $backgroundlight : $white;
+    $titlelight:$themedeep;
+    $textlight:$dark;
+    // DARKMODE
+    $backgrounddark:$dark;
+    $titledark:$white;
+    $textdark:$lightgray;
+    // ACTIONS
+    $hover:rgba(128, 128, 128, 0.076);
+    $transition :200ms;
+
+
+
+
+
+
 // STANDARD
 $c1:#fff;
-$c2:rgb(145, 145, 255);
+$c2:rgb(255, 225, 190);
 // LIGHT MODE
+$title: #de754e;
+$p:rgb(28, 28, 28);
 // BACKGROUND COLOR
 $bg:#fff;
-$text:rgb(28, 28, 28);
 
+// DARKMODE
 $dark:rgb(143, 143, 143);
 $lit:rgb(237, 237, 237);
 // HOVER COLOR
@@ -15,3 +42,9 @@ $hov : rgba(128, 128, 128, 0.076);
 // DARK MODE
 $dbg:rgb(17, 18, 20);
 $dbgl:rgb(37, 39, 44);
+$g : rgb(24, 162, 24);
+
+
+// SHADOW
+$shadow : 0 0 1rem 0.1rem rgba(223, 223, 223, 0.3);
+$neongreen : 1px 1px 1rem  green;

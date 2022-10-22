@@ -1,11 +1,25 @@
 @mixin transition {
-    transition: 200ms all ease-in-out ;
+    transition: $transition all ease-in-out ;
+}
+@mixin scale {
+    @include transition();
+    cursor: pointer;
+     &:hover{        
+        transform: scale(130%);
+    }
 }
 @mixin hover {
     cursor: pointer;
     @include transition();
+    // width: 2rem;
+    // height: 2rem;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     &:hover{
-        background-color: $hov;
+        background-color: $hover;
+        // border-radius: 100%;
+        
         transform: scale(130%);
     }
 }
@@ -24,6 +38,12 @@
     z-index: 10;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    background-color: #fff;
+    background-color: $backgroundlight;
     overflow: hidden;
+}
+
+@mixin drounded {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
 }

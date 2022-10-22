@@ -1,0 +1,18 @@
+{
+    "main": {
+        "title": "Je suis un artiste et un développeur",
+        "description": "Je m'appelle Aymen Menai, 23 ans, Algérien, et je suis développeur full stack et graphiste"
+    },
+    "tech": {
+        "title": "Technologies que j'utilise",
+        "description": "Ce sont des technologies avec lesquelles je peux travailler dans des projets et même de grands projets, donc si vous avez une équipe utilisant ces technologies, il sera plus facile d'avoir un démarrage rapide sur le flux"
+    },
+    "project": {
+        "title": "Mes projets",
+        "description": "Ce sont des sites Web que vous ne pouvez pas vérifier, et essayez (le site Web et l'interface utilisateur complète sont construits par moi, notez également que certaines API utilisées proviennent d'un tiers), Attention ! Ces sites Web ne sont pas à des fins commerciales , si vous remarquez des publicités ou de telles sections payantes, ceux-ci essaient de vous spammer"
+    },
+    "contact": {
+        "title": "Recherche de votre contact",
+        "description": "Si vous avez des intérêts à propos de ce que je construis, des commentaires, souhaitez concrétiser votre projet de rêve ou même, ou même si vous souhaitez m'engager, n'hésitez pas à me contacter sur facebook, linkedIn ou par e-mail. nous organisons un appel vidéo et discutons de vos idées"
+    }
+}
